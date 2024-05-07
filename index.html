@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cart System</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+  <style>
+    .card img {
+      height: 200px;
+    }
+  </style>
+</head>
+
+<body>
+  <section id="products" class="py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card">
+            <img class="card-img-top"
+              src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cHJvZHVjdHxlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80"
+              alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Watch</h5>
+              <p class="card-text">Rs.200</p>
+              <button class="btn btn-primary" onclick="addToCart('Watch')">Add To Cart</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img class="card-img-top"
+              src="https://img1a.flixcart.com/fk-sp-static/21072015/blue-24744-yepme-8-400x400-imadqtjww8cwpthg.jpeg"
+              alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Shoes</h5>
+              <p class="card-text">Rs.500</p>
+              <button class="btn btn-primary" onclick="addToCart('Shoes')">Add To Cart</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img class="card-img-top"
+              src="https://images.pexels.com/photos/90946/pexels-photo-90946.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+              alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Camera</h5>
+              <p class="card-text">Rs.2500</p>
+              <button class="btn btn-primary" onclick="addToCart('Camera')">Add To Cart</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="table">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="card">
+            <div class="card-header">
+              Cart
+            </div>
+            <div class="card-body">
+              <table class="table table-bordered" id="table-cart">
+                  <tr>
+                    <th>Name</th>
+                    <th>Price</th>
+                    <th>Qty</th>
+                    <th>Total Price</th>
+                    <th>Action</th>
+                  </tr>
+                  
+                
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="index.js"></script>
+</body>
+
+</html>
